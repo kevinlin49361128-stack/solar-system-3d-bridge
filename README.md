@@ -1,5 +1,9 @@
 # solar-system-3d-bridge
 
+[![test](https://github.com/kevinlin49361128-stack/solar-system-3d-bridge/actions/workflows/test.yml/badge.svg)](https://github.com/kevinlin49361128-stack/solar-system-3d-bridge/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Node: 18+](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+
 Local helper that lets the browser-based [solar-system-3d](https://github.com/kevinlin49361128-stack/solar-system-3d) simulator talk to a real telescope mount.
 
 The browser can't open arbitrary TCP sockets or call Windows COM, so it can't speak INDI or ASCOM directly. This is the tiny translator process you run on the same machine as your mount control software. The browser opens a WebSocket to this helper, the helper translates between the simulator's JSON envelope and the mount's native protocol.
