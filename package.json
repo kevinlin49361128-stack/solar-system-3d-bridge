@@ -1,0 +1,39 @@
+{
+  "name": "solar-system-3d-bridge",
+  "version": "0.1.0",
+  "description": "Local INDI / ASCOM telescope bridge for the solar-system-3d browser simulator. Translates between mount drivers and the simulator's JSON-over-WebSocket protocol.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "sss-bridge": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test 'test/**/*.test.js'"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "astronomy",
+    "telescope",
+    "indi",
+    "ascom",
+    "websocket",
+    "solar-system-3d"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinlin49361128-stack/solar-system-3d-bridge.git"
+  },
+  "homepage": "https://github.com/kevinlin49361128-stack/solar-system-3d-bridge#readme",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
